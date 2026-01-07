@@ -30,7 +30,7 @@ Changer le `.env.example` en `.env` avec vos informations dedans
 ### 3. Démarrer l'application
 
 ```bash
-docker compose up -d
+docker compose up --build -d
 ```
 
 ### 4. Accéder à l'application
