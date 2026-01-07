@@ -23,36 +23,39 @@ docker compose version
 cd DockerNotes
 ```
 
-### 2. Installer les dépendences nécessaires
-
-```bash
-cd api
-npm i
-```
-
-```bash
-cd front
-npm i
-```
-
-### 3. Configurer les variables d'environnement
+### 2. Configurer les variables d'environnement
 
 Changer le `.env.example` en `.env` avec vos informations dedans
 
-### 4. Démarrer l'application
+### 3. Démarrer l'application
 
 ```bash
-docker compose up -d
+docker compose up --build -d
 ```
 
-### 5. Accéder à l'application
+### 4. Accéder à l'application
 
 Ouvrir le navigateur sur : **http://localhost:8080**
 
-### 6. Arrêter l'application
+### 5. Arrêter l'application
 
 ```bash
 docker compose down
+```
+
+## Test
+
+### 1. Affichage BDD
+
+Dans la console Docker
+```
+docker exec -it mini_db psql -U nom_user_postgres -d nom_de_la_db
+```
+
+Puis faire
+
+```
+SELECT * FROM notes;
 ```
 
 ## Architecture
