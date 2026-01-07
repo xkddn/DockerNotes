@@ -43,6 +43,21 @@ Ouvrir le navigateur sur : **http://localhost:8080**
 docker compose down
 ```
 
+## Test
+
+### 1. Affichage BDD
+
+Dans la console Docker
+```
+docker exec -it mini_db psql -U nom_user_postgres -d nom_de_la_db
+```
+
+Puis faire
+
+```
+SELECT * FROM notes;
+```
+
 ## Architecture
 
 ### Services déployés
