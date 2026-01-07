@@ -27,10 +27,17 @@ cd DockerNotes
 
 Changer le `.env.example` en `.env` avec vos informations dedans
 
+Ensuite faire 
+```bash
+docker compose up --build -d
+```
+
+Puis arreter le container dans Docker Desktop.
+
 ### 3. Démarrer l'application
 
 ```bash
-docker compose up --build -d
+docker compose up --build
 ```
 
 ### 4. Accéder à l'application
